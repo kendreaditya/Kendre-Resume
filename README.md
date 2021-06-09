@@ -16,12 +16,7 @@ Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.co
 This template attempts to **look clean**, highlight **details**, be a **single page**, and allow useful **LaTeX templating**.
 
 ## Preview
-
-### OpenFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png)
-
-### MacFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/MacFonts/sample-image.png)
+![alt tag](https://raw.githubusercontent.com/kendreaditya/Kendre-Resume/master/sample-image.png)
 
 ## Dependencies
 
