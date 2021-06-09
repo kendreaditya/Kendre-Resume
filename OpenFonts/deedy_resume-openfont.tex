@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ \usepackage{fontawesome5}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+\namesection{Aditya}{Kendre}
+\descript{Software Engineering}
+\descript{Machine Learning Engineer}
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\faIcon{map-marker-alt} \bf Mechanicsburg, PA \\
+\href{mailto:kendreaditya@gmail.com}{\faIcon{envelope} \bf kendredaitya@gmail.com} \\
+\faIcon{phone-alt} \bf 717-622-1281 \\
+\href{https://kendreaditya.github.io/}{\faIcon{desktop} \bf kendreaditya.github.io} \\
+\href{https://github.com/kendreaditya}{\faIcon{github} \bf github.com/kendreaditya} \\
+\href{https://linkedin.com/in/kendreaditya}{\faIcon{linkedin} \bf linkedin.com/in/kendreaditya} \\
+\vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \mbox{\faIcon{clipboard-list} \section{Skills}} \\
+\section{Skills}
+
+\subsection{Python}
+\location{}
+Pytorch \textbullet{} TensorFlow \textbullet{} Numpy \textbullet{}
+Scikit-Learn \textbullet{} Scipy \textbullet{} Pandas \textbullet{} 
+Matplotlib \textbullet{} PostgreSQL \textbullet{} Flask \textbullet{}
+Django
+
+\vspace{8pt}
+
+\subsection{JavaScript}
+\location{}
+React.js \textbullet{} Node.js \textbullet{} Express.js \textbullet{}
+Redux \textbullet{} Angular.js \textbullet{} 
+
+\vspace{8pt}
+
+\subsection{Mobile Development}
+\location{}
+Flutter \textbullet{} React Native \textbullet{} Java \textbullet{} 
+
+\vspace{8pt}
+
+\subsection{Machine Learning}
+\location{}
+SVM \textbullet{} Linner/Logistic Regression \textbullet{} Naive Bayes \textbullet{} 
+Decision Tree \textbullet{} CNN \textbullet{} RNN \textbullet{} LSTM \textbullet{} 
+Transformer \textbullet{} GAN \textbullet{} KNN 
+
+\vspace{8pt}
+
+\subsection{Other}
+\location{}
+Git/Github \textbullet{} Docker \textbullet{} Kubernetes \textbullet{}
+Java \textbullet{} C++ \textbullet{} HTML \textbullet{} CSS \textbullet{} Bash \textbullet{}
+AWS \textbullet{} Azure \textbullet{} Linux \textbullet{} GCP \textbullet{} 
+Agile (Scrum) \textbullet{} LaTex/Tex
+
+\vspace{8pt}
+
+% \subsection{Soft Skills}
+% \location{}
+% Public Speaker \textbullet{} Leader \textbullet{} \\ Creative Problem Solver \\
+% \vspace{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \mbox{\faIcon{graduation-cap} \section{Education} } \\
+\section{Education}
+
+\subsection{Penn State University}
+\descript{BS in Computer Science}
+\location{2021 - 2025}
+\sectionsep
+
+\subsection{Full-Stack Developer Nanodegree}
+\descript{Udacity}
+\location{May 2021 - Present}
+\begin{tightemize}
+    \item Created server-side and data-driven web applications for large-scale operations.
+    \item Learned database and API development with access control.
+    \item Deployed containerized applications using Docker and Kubernetes on AWS.
+\end{tightemize}
+\sectionsep
+
+\subsection{Deep Learning Nanodegree}
+\descript{Udacity}
+\location{July 2020 - August 2020}
+\begin{tightemize}
+    \item Implemented low-level models and backpropagation from scratch in Python.
+    \item Applied high-level architectures to image recognition, sequence generation, and image generation problems with PyTorch.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \mbox{\faIcon{pen-square} \section{Projects}} \\
+\section{Projects}
+
+%%%%%%%%%%%%%%%%%%% Heart Sound Abnormality Detection App %%%%%%%%%%%%%%%%%%%
+\runsubsection{Heart Sound Abnormality Detection App}
+\descript{\href{https://github.com/kendreaditya/PCG-arrhythmia-detection}{\faIcon{github}}}
+\location{December 2020 – May 2021}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Created a novel deep learning model using PyTorch/Pytorch Lightning that converts Electrocardiograms (ECGs) into Heart Sounds (PCGs) and predicts abnormalities/ arrhythmias in heart sounds
+    \item Published an app using Flutter that records the heart sounds and creates a prediction from them.
+    \item Developed a fastAPI for serving the model to the app and implemented a PostgreSQL database for storing the heart sounds.
+\end{tightemize}
+\textit{Pytorch, Numpy, Scikit-Learn, Scipy, Matplotlib, PostgresSQL, Flask, Flutter, Git/Github}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%% Machine Learning Visualizer %%%%%%%%%%%%%%%%%%%
+\runsubsection{Machine Learning Visualizer}
+\descript{\href{https://kendreaditya.github.io/wiki-graph/}{\faIcon{globe}} \textbullet{} \href{https://github.com/kendreaditya/ml-playground}{\faIcon{github}}}
+\location{May 2021 – July 2021}
+\begin{tightemize}
+
+    \item Built a machine learning playground using React.js for visualizing different algorithms in real-time.
+    \item Created a low-level dataset creation tool for generating a custom 2-cluster dataset for training.
+    \item Implemented models ranging from SVMs, KNNs, and Naive Bayes to MLPs and CNNs.
+\end{tightemize}
+\textit{React.js, Redux, Git/Github}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%% Node-Based Wikipedia Graph %%%%%%%%%%%%%%%%%%%
+\runsubsection{Node-Based Wikipedia Graph}
+\descript{\href{https://kendreaditya.github.io/wiki-graph/}{\faIcon{globe}} \textbullet{} \href{https://github.com/kendreaditya/wiki-graph}{\faIcon{github}}}
+\location{March 2021 – May 2021}
+\begin{tightemize}
+
+    \item Developed a React.js-based graph (data type) that displays connections between related articles.
+    \item Used multiple Wikipedia API and web scraping techniques to extract data from Wikipedia articles.
+    \item Used ML sentiment-based analysis to include the most relevant articles in the graph.
+\end{tightemize}
+\textit{React.js, Git/Github}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%% Dog Breed Classifier %%%%%%%%%%%%%%%%%%%
+% \runsubsection{Dog Breed Classifier}
+% \descript{\href{https://kendreaditya.github.io/wiki-graph/}{\faIcon{globe}} \textbullet{} \href{https://github.com/kendreaditya/dog-breed-classifier}{\faIcon{github}}}
+% \location{August 2020 – September 2020}
+% \begin{tightemize}
+% 
+%     \item Built a pipeline to process real-world, user-supplied images in Pytorch. Given an image of a dog, the algorithm will identify an estimate of the canine's breed. 
+%     \item Created a website using Angular.js to upload pictures and make predictions on them.
+% \end{tightemize}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \mbox{\faIcon{hotel} \section{Experience}} \\
+\section{Experience}
+
+%%%%%%%%%%%%%%%%%%% Palace %%%%%%%%%%%%%%%%%%%
+\runsubsection{Palace}
+\descript{| Software Engineering Intern}
+\location{Aug. 2020 - May 2021 | Mechanicsburg, PA}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created websites using front-end frameworks such as React.js.
+\item Designed API endpoints using Node.js, Express.js, and Mongoose.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%% Lehigh University %%%%%%%%%%%%%%%%%%%
+\runsubsection{Lehigh University}
+\descript{| Machine Learning Researcher}
+\location{August 2020 - Present | Bethlehem, PA}
+\begin{tightemize}
+    \item Led the development of models for EEG connectome analysis using architectures like ResNets and DenseNets.
+    \item Created a system for preprocessing, training, logging, and testing the model on datasets using PyTorch/PyTorch Lightning and Weights \& Biases.
+    \item Collaborated among team members using Git/Github for version control.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \mbox{\faIcon[regular]{file-alt} \section{Publications}} \\
+\section{Publications}
+
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
